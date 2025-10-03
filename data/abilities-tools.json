@@ -1,0 +1,16 @@
+[
+  { "name": "VSCode", "level": 4 },
+  { "name": "intelliJ", "level": 4 },
+  { "name": "Github / Gitlab", "level": 3 },
+  { "name": "Figma", "level": 2 },
+  { "name": "Scrum / Agile", "level": 4 },
+  { "name": "SEO", "level": 2 },
+  { "name": "Postman", "level": 4 },
+  { "name": "Slack", "level": 4 },
+  { "name": "Jenkins", "level": 3 },
+  { "name": "AWS / Google Cloud", "level": 2 },
+  { "name": "GIT", "level": 3 },
+  { "name": "CLI", "level": 3 },
+  { "name": "Docker", "level": 3 },
+  { "name": "CI / CD", "level": 3 }
+]
