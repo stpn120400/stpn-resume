@@ -1,0 +1,127 @@
+/* Moved from components/SkillsSection.module.css */
+.skillsSection {
+  margin: var(--space-12) 0;
+  padding: var(--space-8) 0;
+  position: relative;
+}
+
+.sectionTitle {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--color-navy);
+  text-align: center;
+}
+
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.skillsColumns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 1024px) {
+  .skillsColumns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .skillsColumns {
+    grid-template-columns: 1fr;
+  }
+  
+  .skillsCard {
+    padding: var(--space-6) var(--space-4);
+  }
+  
+  .skillsSubtitle {
+    font-size: var(--text-base);
+  }
+}
+
+.skillsCard {
+  background: linear-gradient(145deg, var(--color-white) 0%, var(--color-bg-light) 100%);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow);
+  padding: var(--space-8) var(--space-6) var(--space-6) var(--space-6);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 0;
+  height: 100%;
+  position: relative;
+  transition: all var(--transition-normal);
+  border: 1px solid rgba(10, 31, 68, 0.05);
+  overflow: hidden;
+}
+
+.skillsCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-navy) 0%, var(--color-accent) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.skillsCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.skillsCard:hover::before {
+  opacity: 1;
+}
+
+.skillsSubtitle {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.skillsList {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-text);
+  font-size: var(--text-base);
+  line-height: 1.7;
+}
+
+.skillsList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 1.05em;
+  color: var(--color-navy);
+  padding-left: 0;
+}
+
+.icon {
+  margin-right: 0.5em;
+  color: var(--color-accent, #3b82f6);
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+.iconBullet {
+  margin-right: 0.7em;
+  color: var(--color-accent, #3b82f6);
+  font-size: 1em;
+  vertical-align: middle;
+  flex-shrink: 0;
+}

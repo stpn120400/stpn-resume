@@ -1,0 +1,72 @@
+.profileSection {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.profileGrid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: var(--space-10);
+  margin-bottom: var(--space-16);
+}
+
+.profileGrid:last-child {
+  margin-bottom: 0;
+}
+
+.profileLabel {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  padding-top: var(--space-1);
+}
+
+.profileSummary {
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  color: var(--color-text);
+  width: 100%;
+}
+
+.educationItem {
+  margin-bottom: var(--space-6);
+}
+
+.educationItem:last-child {
+  margin-bottom: 0;
+}
+
+.school {
+  color: var(--color-text-muted);
+  font-size: var(--text-base);
+  margin-top: var(--space-1);
+  margin-left: var(--space-4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profileSection {
+    padding: 0 var(--space-4);
+  }
+
+  .profileGrid {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .profileLabel {
+    flex: none;
+    margin-bottom: var(--space-2);
+  }
+
+  .profileSummary {
+    font-size: var(--text-base);
+  }
+
+  .school {
+    margin-left: var(--space-2);
+  }
+}

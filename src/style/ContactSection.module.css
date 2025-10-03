@@ -1,0 +1,201 @@
+.contact {
+  background: linear-gradient(145deg, var(--color-white) 0%, var(--color-bg-light) 100%);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow);
+  padding: var(--space-8) var(--space-6);
+  margin: var(--space-10) auto 0 auto;
+  max-width: 420px;
+  text-align: center;
+  position: relative;
+  transition: all var(--transition-normal);
+  border: 1px solid rgba(10, 31, 68, 0.05);
+  overflow: hidden;
+}
+
+.contact:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-navy) 100%);
+}
+
+.backToTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem auto;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(145deg, var(--color-navy) 0%, var(--color-accent) 100%);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.backToTop::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.backToTop:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.backToTop:hover::before {
+  opacity: 1;
+}
+
+.arrowIcon {
+  font-size: 1.1em;
+  transition: transform var(--transition-normal);
+}
+
+.backToTop:hover .arrowIcon {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .backToTop {
+    padding: 0.6rem 1.2rem;
+    font-size: var(--text-sm);
+  }
+}
+
+.contact h3 {
+  color: var(--color-navy);
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-4);
+  position: relative;
+  display: inline-block;
+}
+
+.contact h3::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-navy) 100%);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition-normal);
+}
+
+.contact:hover h3::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.contact a {
+  color: var(--color-navy);
+  text-decoration: none;
+  transition: all var(--transition-normal);
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.contact a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition-normal);
+}
+
+.contact a:hover {
+  color: var(--color-accent);
+}
+
+.contact a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.contact p {
+  margin: 0.5rem 0;
+  font-size: 1.05rem;
+}
+
+.contactDecorWrap {
+  position: relative;
+  padding-bottom: 48px;
+}
+
+.contactDecorTop {
+  width: 100%;
+  height: 36px;
+  background: linear-gradient(90deg, var(--color-accent, #3b82f6) 0%, var(--color-yellow, #fbbf24) 100%);
+  border-radius: 0 0 36px 36px;
+  margin-bottom: -18px;
+  opacity: 0.18;
+  box-shadow: 0 4px 16px 0 rgba(59,130,246,0.08);
+}
+
+.contactDecorBottom {
+  width: 100%;
+  height: 36px;
+  background: linear-gradient(90deg, var(--color-yellow, #fbbf24) 0%, var(--color-accent, #3b82f6) 100%);
+  border-radius: 36px 36px 0 0;
+  margin-top: -18px;
+  opacity: 0.18;
+  box-shadow: 0 -4px 16px 0 rgba(251,191,36,0.08);
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.contactList li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.08rem;
+  color: #1e293b;
+  padding-left: 0;
+}
+
+.icon {
+  margin-right: 0.7em;
+  color: #3b82f6;
+  font-size: 1.2em;
+  vertical-align: middle;
+}

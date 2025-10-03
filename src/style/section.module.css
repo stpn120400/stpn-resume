@@ -1,0 +1,88 @@
+/* Base section styles */
+.section {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  transition: background-color var(--transition-normal);
+  border-bottom: 1px solid rgba(10, 31, 68, 0.05);
+}
+
+/* Inner container for consistent width */
+.inner {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+  animation: fadeIn 0.8s ease-out;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section background colors */
+.profile {
+  background: var(--color-bg);
+}
+
+.freelance {
+  background: var(--color-bg-light);
+}
+
+.professional {
+  background: var(--color-bg-dark);
+}
+
+.certifications {
+  background: linear-gradient(to bottom right, var(--color-bg-light), #fffbe6);
+}
+
+.sampleworks {
+  background: var(--color-white);
+}
+
+.abilities {
+  background: linear-gradient(to bottom right, var(--color-bg-light), var(--color-bg-dark));
+}
+
+.skills {
+  background: var(--color-bg);
+}
+
+.contact {
+  background: linear-gradient(to bottom right, var(--color-bg-dark), var(--color-bg-light));
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .inner {
+    padding: var(--space-8);
+  }
+}
+
+@media (min-width: 1024px) {
+  .inner {
+    padding: var(--space-10) var(--space-8);
+  }
+}

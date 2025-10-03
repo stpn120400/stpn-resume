@@ -1,0 +1,107 @@
+.skillCategorySpacer {
+  margin-top: 2rem;
+}
+.abilitiesSection {
+  min-height: 100vh;
+  padding-top: var(--space-8);
+  background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.abilitiesSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(10, 31, 68, 0.1), transparent);
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+.titleRow {
+  grid-column: 3 / span 4;
+}
+.subtitleRow {
+  grid-column: 2 / span 4;
+}
+.subtitle {
+  margin-left: 2px;
+  font-size: 1.25rem;
+  color: #6b7280;
+}
+.divider {
+  margin: 2rem auto 0.5rem auto;
+  width: 4rem;
+  height: 3px;
+  background: #d1d5db;
+  border-radius: 2px;
+}
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.skillCategory {
+  font-weight: 700;
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-4);
+  margin-top: 0;
+  text-transform: none;
+  color: var(--color-navy);
+  position: relative;
+  display: inline-block;
+  padding-bottom: var(--space-2);
+}
+
+.skillCategory::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2rem;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-navy) 100%);
+  border-radius: 2px;
+  transition: width var(--transition-normal);
+}
+
+.skillCategory:hover::after {
+  width: 100%;
+}
+.skillCategory + .skillCategory {
+  margin-top: 2rem;
+}
+.skillRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+.star {
+  font-style: normal;
+  font-size: 1.1em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  transition: color 0.2s;
+}
+.filled:before {
+  content: '\2605';
+  color: #facc15;
+}
+.empty:before {
+  content: '\2606';
+  color: #d1d5db;
+}

@@ -1,0 +1,53 @@
+.titleWrapper {
+  margin: var(--section-spacing) 0 var(--space-12);
+  position: relative;
+}
+
+.titleWrapper.center {
+  text-align: center;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 900;
+  color: var(--color-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s ease 0.2s;
+}
+
+.center .sectionTitle::after {
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+}
+
+.sectionTitle.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sectionTitle.visible::after {
+  transform: scaleX(1);
+}
+
+.center .sectionTitle.visible::after {
+  transform: translateX(-50%) scaleX(1);
+}
