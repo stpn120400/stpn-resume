@@ -1,0 +1,14 @@
+[
+  { "name": "HTML/5", "level": 4 },
+  { "name": "CSS/3 (+ SASS)", "level": 4 },
+  { "name": "Tailwind 3.x", "level": 2 },
+  { "name": "PHP 8.1 (5 years)", "level": 3 },
+  { "name": "NodeJS / Express", "level": 2 },
+  { "name": "Typescript", "level": 3 },
+  { "name": "MySQL (5 years)", "level": 3 },
+  { "name": "JSON / XML", "level": 3 },
+  { "name": "Python", "level": 3 },
+  { "name": "Java EE", "level": 3 },
+  { "name": "Spring Boot", "level": 3 },
+  { "name": "ReactJS", "level": 3 }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "va-1",
+    "title": "Technical Support Intern (OJT – Hybrid Role)",
+    "company": "Electro Event Supplies and Rentals",
+    "location": "Lapu-Lapu City, Cebu",
+    "date": "April 2023 – June 2023",
+    "details": [
+      "Provided basic technical support for software installation, configuration, and troubleshooting across Windows and Linux systems. Assisted users with resolving connectivity issues, application errors, and system updates.",
+      "Documented support cases and created step-by-step guides for recurring technical issues.",
+      "Collaborated with IT and admin teams to ensure smooth onboarding of new users and devices.",
+      "Supported remote setup of productivity tools including MS Office, Google Workspace, and communication platforms."
+    ]
+  },
+  {
+    "id": "va-2",
+    "title": "Freelance Virtual Support – Multimedia & Brand Design Focus",
+    "company": "Self-Employed",
+    "location": "Remote",
+    "date": "September 2024 – June 2025",
+    "details": [
+      "Designed logos, brand kits, and visual assets tailored to client needs, ensuring consistency across platforms.",
+      "Created marketing materials including social media graphics, flyers, and presentations using Canva, Photoshop, and Illustrator.",
+      "Edited promotional videos and reels using CapCut and Adobe Premiere, optimizing for platform-specific formats.",
+      "Scheduled posts and assisted with content planning for Instagram, Facebook, and LinkedIn.",
+      "Coordinated project timelines, gathered feedback, and delivered revisions promptly via email and messaging platforms.",
+      "Organized design assets and client files in Google Drive and Dropbox, ensuring version control and accessibility.",
+      "Conducted visual trend research and competitor benchmarking to inform branding strategies.",
+      "Managed basic admin tasks including email correspondence, billing records, and milestone tracking."
+    ]
+  }
+]

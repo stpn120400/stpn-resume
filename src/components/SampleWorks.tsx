@@ -3,19 +3,19 @@ import styles from "../style/SampleWorks.module.css";
 
 import SectionTitle from "./SectionTitle";
 
-
+const base = import.meta.env.BASE_URL;
 const vectorArts = [
-  "/src/assets/vector_arts/VA_1.jpg",
-  "/src/assets/vector_arts/VA_2.jpg",
-  "/src/assets/vector_arts/VA_3.jpg",
-  "/src/assets/vector_arts/VA_4.jpg",
-  "/src/assets/vector_arts/VA_5.jpg",
-  "/src/assets/vector_arts/VA_6.jpg",
-  "/src/assets/vector_arts/VA_7.jpg",
-  "/src/assets/vector_arts/VA_8.jpg",
-  "/src/assets/vector_arts/VA_9.jpg",
-  "/src/assets/vector_arts/VA_10.jpg",
-  "/src/assets/vector_arts/VA_11.jpg",
+  `${base}assets/vector_arts/VA_1.jpg`,
+  `${base}assets/vector_arts/VA_2.jpg`,
+  `${base}assets/vector_arts/VA_3.jpg`,
+  `${base}assets/vector_arts/VA_4.jpg`,
+  `${base}assets/vector_arts/VA_5.jpg`,
+  `${base}assets/vector_arts/VA_6.jpg`,
+  `${base}assets/vector_arts/VA_7.jpg`,
+  `${base}assets/vector_arts/VA_8.jpg`,
+  `${base}assets/vector_arts/VA_9.jpg`,
+  `${base}assets/vector_arts/VA_10.jpg`,
+  `${base}assets/vector_arts/VA_11.jpg`,
 ];
 
 export default function SampleWorks() {

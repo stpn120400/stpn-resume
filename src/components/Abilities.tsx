@@ -2,6 +2,8 @@ import styles from "../style/Abilities.module.css";
 import SectionTitle from "./SectionTitle";
 import { useEffect, useState } from "react";
 
+const base = import.meta.env.BASE_URL;
+
 type Skill = { name: string; level: number };
 
 export default function Abilities() {
@@ -10,13 +12,13 @@ export default function Abilities() {
   const [toolSkills, setToolSkills] = useState<Skill[]>([]);
 
   useEffect(() => {
-    fetch("/src/data/abilities-coding.json")
+    fetch(`${base}data/abilities-coding.json`)
       .then((res) => res.json())
       .then(setCodingSkills);
-    fetch("/src/data/abilities-languages.json")
+    fetch(`${base}data/abilities-languages.json`)
       .then((res) => res.json())
       .then(setLanguageSkills);
-    fetch("/src/data/abilities-tools.json")
+    fetch(`${base}data/abilities-tools.json`)
       .then((res) => res.json())
       .then(setToolSkills);
   }, []);

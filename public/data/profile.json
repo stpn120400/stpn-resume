@@ -1,0 +1,66 @@
+{
+  "name": "Stephen Rey G. Agustinez",
+  "address": "Zone 5, Looc, Salay, Misamis Oriental, 9007",
+  "email": "stpnrey.agustinez@gmail.com",
+  "phone": "+63 926 237 2965",
+  "dateOfBirth": "December 4, 2000",
+  "careerObjective": "Motivated and detail-oriented Computer Engineering graduate with hands-on experience in developing backend solutions, web applications, and process-improvement systems for manufacturing and enterprise environments. Skilled in Java, Spring Boot, web technologies, and data visualization tools, with a strong foundation in embedded systems and IT support.\nSeeking to advance my career as a Software Engineer and Virtual Assistant, where I can leverage my technical expertise, problem-solving skills, and passion for creating innovative software solutions that drive efficiency and deliver value to users. \nAdditionally, as a creative and detail-oriented professional, I aim to provide remote administrative support, website and brand asset management, and technical assistance. I offer a unique blend of design expertise, multimedia production, and digital organization—committed to delivering high-quality results with clear communication, efficient workflows, and tech-savvy execution.",
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Engineering",
+      "years": "2019 - 2023",
+      "school": "University of Science and Technology of Southern Philippines",
+      "address": "Lapasan, Cagayan de Oro City"
+    },
+    {
+      "degree": "Science, Technology, Engineering, and Mathematics (STEM) Strand",
+      "years": "2017 - 2019",
+      "school": "Liceo de Cagayan University - Senior High School",
+      "address": "R.N.P. Blvd., Kauswagan, Cagayan de Oro City"
+    }
+  ],
+  "technicalSkills": [
+    "Hardware and Software troubleshooting",
+    "Programming (C, Java, Python)",
+    "Web Development (HTML, CSS, Javascript, PHP, SQL)",
+    "Embedded System (Microcontrollers; ESP & Arduino)",
+    "Microsoft Office (MS Word, Excel, Powerpoint)",
+    "Adobe Creative Suite (Photoshop, Premiere, After Effects, Illustrator)",
+    "Tableau", 
+    "Power BI"
+  ],
+  "coreVASkills": [
+    "Brand Identity & Graphic Design",
+    "Video Editing & Content Creation",
+    "Social Media Scheduling & Templates",
+    "Online Research & Reporting",
+    "File Organization & Cloud Management",
+    "Calendar & Email Management",
+    "Document Preparation & Formatting",
+    "Task Coordination & Time Tracking",
+    "Technical Troubleshooting & Software Setup",
+    "Remote Collaboration Tools (Zoom, Slack, Trello)",
+    "Canva, Adobe Photoshop, Illustrator, CapCut"
+  ],
+  "personalSkills": [
+    "Excellent written and verbal communication skills",
+    "Highly organized and efficient",
+    "Ability to work independently and as part of a team",
+    "Can easily learn and adapt changes.",
+    "Proven leadership skills and ability to motivate"
+  ],
+  "achievements": [
+    "System Integrator / Programmer, Design 2 - Thesis (Design and Development of Air Pollution Monitoring System in University of Science and Technology of Southern Philippines, 2023)",
+    "Creative Director in Videography, University Digital Arts (2022-2023)",
+    "Front-end Developer, Capstone Project: Fishing Ban Report App for Lanao del Norte (2021-2022)"
+  ],
+  "certifications": [
+    "CCNA: Enterprise Networking, Security, and Automation - Cisco (June 2022)",
+    "Google Technical Support Fundamentals (February 2023)",
+    "Introduction to Cybersecurity Tools & Cyber Attacks (September 2020)",
+    "Using Google Forms to Analyze User Research Data (2020)",
+    "OWASP Top 10: Securing Web Applications (2025)",
+    "CCSP 2019: Identity & Access Management(June 2025)",
+    "CCSP 2019: Application Development & Security (June 2025)"
+  ]
+}
