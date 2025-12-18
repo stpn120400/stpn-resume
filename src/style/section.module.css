@@ -14,6 +14,11 @@
   flex-wrap: wrap;
   transition: background-color var(--transition-normal);
   border-bottom: 1px solid rgba(10, 31, 68, 0.05);
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 24px;
 }
 
 /* Inner container for consistent width */
@@ -28,6 +33,12 @@
   box-sizing: border-box;
   animation: fadeIn 0.8s ease-out;
   position: relative;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.08);
+  backdrop-filter: blur(8px) saturate(160%);
+  -webkit-backdrop-filter: blur(8px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 @keyframes fadeIn {
