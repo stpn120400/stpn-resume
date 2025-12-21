@@ -1,3 +1,26 @@
+# Portfolio Redirect Notice
+
+This portfolio has moved to a new address:
+
+https://stpn120400.github.io/tech-va-portfolio
+
+Visitors to the old deployment are automatically redirected after a short delay with a graceful fallback page.
+
+## How the redirect works
+- Root page renders a lightweight, accessible **redirection card** and auto‑redirects after ~2 seconds.
+- Uses `window.location.replace()` (history‑safe) with a `<meta http-equiv="refresh">` fallback.
+- Manual CTA link is provided in case auto‑redirect fails.
+
+## Update the destination URL
+- Edit the single constant in [public/redirect-config.js](public/redirect-config.js): update `REDIRECT_URL` (and optionally `REDIRECT_DELAY`).
+
+## Local verification
+1. Start dev server: `npm run dev`
+2. Visit `/` and confirm the message, CTA, and auto‑redirect.
+3. Optional: open the standalone page at [public/redirect.html](public/redirect.html).
+
+---
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
